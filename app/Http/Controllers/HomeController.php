@@ -15,4 +15,12 @@ class HomeController extends Controller
     function indexShopCart(){
         return view('shop.shop-cart');
     }
+
+    function indexCheckOut(){
+        return view('shop.checkout');
+    }
+
+    function indexShop(){
+        return view('shop.shop');
+    }
 }

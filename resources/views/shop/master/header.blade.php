@@ -12,12 +12,12 @@
                         <li class="active"><a href="{{route('home')}}">Home</a></li>
                         <li><a href="#">Women’s</a></li>
                         <li><a href="#">Men’s</a></li>
-                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="{{route('shop')}}">Shop</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="dropdown">
-                                <li><a href="./product-details.html">Product Details</a></li>
+                                <li><a href="{{route('shop')}}">Product Details</a></li>
                                 <li><a href="{{route('shop-cart')}}">Shop Cart</a></li>
-                                <li><a href="./checkout.html">Checkout</a></li>
+                                <li><a href="{{route('check-out')}}">Checkout</a></li>
                                 <li><a href="./blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
