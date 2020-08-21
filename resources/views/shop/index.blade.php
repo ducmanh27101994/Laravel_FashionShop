@@ -55,7 +55,7 @@
                         <h1>Women’s fashion</h1>
                         <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore
                         edolore magna aliquapendisse ultrices gravida.</p>
-                        <a href="#">Shop now</a>
+                        <a href="{{route('shop')}}">Shop now</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                             <div class="categories__text">
                                 <h4>Men’s fashion</h4>
                                 <p>358 items</p>
-                                <a href="#">Shop now</a>
+                                <a href="{{route('shop')}}">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                             <div class="categories__text">
                                 <h4>Kid’s fashion</h4>
                                 <p>273 items</p>
-                                <a href="#">Shop now</a>
+                                <a href="{{route('shop')}}">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                             <div class="categories__text">
                                 <h4>Cosmetics</h4>
                                 <p>159 items</p>
-                                <a href="#">Shop now</a>
+                                <a href="{{route('shop')}}">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                             <div class="categories__text">
                                 <h4>Accessories</h4>
                                 <p>792 items</p>
-                                <a href="#">Shop now</a>
+                                <a href="{{route('shop')}}">Shop now</a>
                             </div>
                         </div>
                     </div>
