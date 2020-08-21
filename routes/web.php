@@ -18,3 +18,11 @@ Route::get('/','HomeController@index')->name('home');
 Route::get('/shop-cart','HomeController@indexShopCart')->name('shop-cart');
 Route::get('/checkout','HomeController@indexCheckOut')->name('check-out');
 Route::get('/shop','HomeController@indexShop')->name('shop');
+
+Route::prefix('/admin')->group(function (){
+
+    Route::prefix('products')->group(function (){
+        Route::get('/','ProductController@index')->name('products.index');
+    });
+
+});
