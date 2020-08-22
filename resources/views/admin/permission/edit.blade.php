@@ -5,17 +5,17 @@
     <div class="container">
 
         <div class="container">
-            <form method="post" action="{{route('permission.store')}}">
+            <form method="post" action="{{route('permission.update',$user->id)}}">
                 @csrf
                 <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
                     <input type="text" name="name" class="form-control" placeholder="User Name"
-                           aria-describedby="emailHelp" required>
+                           aria-describedby="emailHelp" value="{{$user->name}}" required>
 
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" name="email" class="form-control" placeholder="Email" aria-describedby="emailHelp" required>
+                    <input type="email" name="email" class="form-control" placeholder="Email" aria-describedby="emailHelp" value="{{$user->email}}" required>
 
                 </div>
                 <div class="form-group">
@@ -27,8 +27,9 @@
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Role</label>
                     <select name="role" class="form-control" id="exampleFormControlSelect1">
-                        <option value="admin">Admin</option>
-                        <option value="user">User</option>
+                        @foreach($users as $user1)
+                        <option @if($user1->role == $user->role)  selected @endif value="admin">{{$user1->role}}</option>
+                        @endforeach
                     </select>
                 </div>
 

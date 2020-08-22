@@ -27,7 +27,7 @@
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
                         <td>{{$user->role}}</td>
-
+                        <td><a class="btn btn-success" href="{{route('permission.edit',$user->id)}}">Edit</a> </td>
                         <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{route('permission.delete',$user->id)}}">Delete</a> </td>
                     </tr>
                 @endforeach
