@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
     //
 
     function index(){
-        return view('shop.index');
+        $products = DB::table('products')->select('*')->orderBy('id','desc')->get();
+        return view('shop.index',compact('products'));
     }
 
     function indexShopCart(){

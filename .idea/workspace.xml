@@ -20,7 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a686cd5-edfe-4e01-9530-d78b7adb2808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/ProductRepositories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/ProductServices.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_22_001405_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_22_001405_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597980154837</updated>
       <workItem from="1597980156458" duration="11796000" />
-      <workItem from="1598053389344" duration="2328000" />
+      <workItem from="1598053389344" duration="7888000" />
     </task>
     <servers />
   </component>
@@ -185,13 +196,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="305" y="120" width="745" height="563" key="NewPhpClassDialog" timestamp="1597981515164">
+    <state x="305" y="120" width="655" height="563" key="NewPhpClassDialog" timestamp="1598056735981">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
+    <state x="305" y="120" width="655" height="563" key="NewPhpClassDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598056735981" />
     <state x="305" y="120" width="745" height="563" key="NewPhpClassDialog/0.34.1366.734@0.34.1366.734" timestamp="1597981515164" />
-    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1597982973645">
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598056676735">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598056676735" />
     <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734@0.34.1366.734" timestamp="1597982973645" />
+    <state x="1422" y="0" width="1001" height="689" maximized="true" key="dock-window-1" timestamp="1598059193483">
+      <screen x="1366" y="0" width="1280" height="1024" />
+    </state>
+    <state x="1422" y="0" width="1001" height="689" maximized="true" key="dock-window-1/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598059193483" />
   </component>
 </project>

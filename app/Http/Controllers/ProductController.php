@@ -2,10 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Services\ProductServices;
+use App\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+
+    protected $productServices;
+
+    function __construct(ProductServices $productServices)
+    {
+        $this->productServices = $productServices;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +23,8 @@ class ProductController extends Controller
     public function index()
     {
         //
-        return view('admin.index');
+        $products = $this->productServices->getAll();
+        return view('admin.products.list',compact('products'));
     }
 
     /**
@@ -25,6 +35,7 @@ class ProductController extends Controller
     public function create()
     {
         //
+        return view('admin.products.create');
     }
 
     /**
@@ -36,6 +47,9 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         //
+        $this->productServices->store($request);
+        return redirect()->route('products.index');
+
     }
 
     /**
@@ -58,6 +72,8 @@ class ProductController extends Controller
     public function edit($id)
     {
         //
+        $product = $this->productServices->edit($id);
+        return view('admin.products.edit',compact('product'));
     }
 
     /**
@@ -70,6 +86,8 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $this->productServices->update($request,$id);
+        return redirect()->route('products.index');
     }
 
     /**
@@ -81,5 +99,9 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+        $this->productServices->delete($id);
+
+
+        return redirect()->route('products.index');
     }
 }

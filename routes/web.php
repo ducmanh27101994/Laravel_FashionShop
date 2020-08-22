@@ -23,6 +23,12 @@ Route::prefix('/admin')->group(function (){
 
     Route::prefix('products')->group(function (){
         Route::get('/','ProductController@index')->name('products.index');
+        Route::get('/create','ProductController@create')->name('products.create');
+        Route::post('/create','ProductController@store')->name('products.store');
+        Route::get('/edit/{id}','ProductController@edit')->name('products.edit');
+        Route::post('/edit/{id}','ProductController@update')->name('products.update');
+        Route::get('/delete/{id}','ProductController@destroy')->name('products.delete');
+
     });
 
 });
