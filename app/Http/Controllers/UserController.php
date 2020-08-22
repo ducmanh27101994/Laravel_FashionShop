@@ -91,6 +91,8 @@ class UserController extends Controller
 
 
     function permissionList(){
-        return view('')
+        $users = DB::table('users')->select('*')->where('role','=','admin')->orWhere('role','=','user')->get();
+
+        return view('admin.permission.list',compact('users'));
     }
 }

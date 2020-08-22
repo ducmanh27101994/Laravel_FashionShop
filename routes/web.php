@@ -49,13 +49,13 @@ Route::post('/admin','UserController@storeLoginAdmin')->name('admin.store');
         Route::get('/delete/{id}','ProductController@destroy')->name('products.delete');
     });
 
-    Route::prefix('/order')->group(function (){
+    Route::middleware('auth')->prefix('/order')->group(function (){
         Route::get('/','BillController@index')->name('order.index');
         Route::get('/detail/{id}','BillController@edit')->name('order.detail');
         Route::post('detail/{id}','BillController@update')->name('order.update');
         Route::post('/','BillController@searchBill')->name('order.search');
     });
-    Route::prefix('/detail')->group(function (){
+    Route::middleware('auth')->prefix('/detail')->group(function (){
         Route::get('/','DetailController@index')->name('detail.index');
         Route::get('/year','DetailController@orderYear')->name('detail.orderYear');
         Route::get('/month','DetailController@orderMonth')->name('detail.orderMonth');
@@ -63,5 +63,9 @@ Route::post('/admin','UserController@storeLoginAdmin')->name('admin.store');
         Route::get('/day','DetailController@orderDay')->name('detail.orderDay');
         Route::post('/search','DetailController@orderSearch')->name('detail.orderSearch');
 
+    });
+
+    Route::prefix('/permission')->group(function (){
+        Route::get('/','UserController@permissionList')->name('permission.index');
     });
 
