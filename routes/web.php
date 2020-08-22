@@ -24,9 +24,9 @@ Route::prefix('shop-cart')->group(function (){
     Route::get('/delete/{id}','CartController@delete')->name('shop-cart.delete');
     Route::post('/update/{id}','CartController@update')->name('shop-cart.update');
 
-    Route::get('/checkout','HomeController@indexCheckOut')->name('check-out');
-    Route::post('/placeOder','HomeController@placeOder')->name('place-oder');
 });
+Route::get('/checkout','HomeController@indexCheckOut')->name('check-out');
+Route::post('/placeOder','HomeController@placeOder')->name('place-oder');
 
 
 
