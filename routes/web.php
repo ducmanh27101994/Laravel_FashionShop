@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/login','UserController@indexLogin')->name('login');
+Route::post('/login','UserController@storeLogin')->name('login.store');
 Route::get('/register','UserController@indexRegister')->name('register');
 Route::post('/register','UserController@storeRegister')->name('register.store');
 
@@ -24,14 +25,14 @@ Route::get('/','HomeController@index')->name('home');
 Route::get('/shop','HomeController@indexShop')->name('shop');
 
 Route::prefix('shop-cart')->group(function (){
-    Route::get('/','CartController@index')->name('shop-cart');
+    Route::get('/','CartController@index')->name('shop-cart')->middleware('auth');
     Route::get('/{id}','CartController@addCart')->name('shop-cart.add');
     Route::get('/delete/{id}','CartController@delete')->name('shop-cart.delete');
     Route::post('/update/{id}','CartController@update')->name('shop-cart.update');
 
 });
-Route::get('/checkout','HomeController@indexCheckOut')->name('check-out');
-Route::post('/placeOder','CartController@placeOder')->name('place-oder');
+Route::get('/checkout','HomeController@indexCheckOut')->name('check-out')->middleware('auth');
+Route::post('/placeOder','CartController@placeOder')->name('place-oder')->middleware('auth');
 Route::get('/product-details/{id}','ProductController@show')->name('product-details');
 
 
