@@ -15,12 +15,25 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/','HomeController@index')->name('home');
-Route::get('/shop-cart','HomeController@indexShopCart')->name('shop-cart');
+
 Route::get('/checkout','HomeController@indexCheckOut')->name('check-out');
 Route::get('/shop','HomeController@indexShop')->name('shop');
 
-Route::prefix('/admin')->group(function (){
 
+
+Route::prefix('shop-cart')->group(function (){
+    Route::get('/','CartController@index')->name('shop-cart');
+    Route::get('/{id}','CartController@addCart')->name('shop-cart.add');
+    Route::get('/delete/{id}','CartController@delete')->name('shop-cart.delete');
+    Route::post('/update/{id}','CartController@update')->name('shop-cart.update');
+
+});
+
+
+
+
+
+Route::prefix('/admin')->group(function (){
     Route::prefix('products')->group(function (){
         Route::get('/','ProductController@index')->name('products.index');
         Route::get('/create','ProductController@create')->name('products.create');
@@ -28,7 +41,5 @@ Route::prefix('/admin')->group(function (){
         Route::get('/edit/{id}','ProductController@edit')->name('products.edit');
         Route::post('/edit/{id}','ProductController@update')->name('products.update');
         Route::get('/delete/{id}','ProductController@destroy')->name('products.delete');
-
     });
-
 });

@@ -129,7 +129,8 @@
                         <ul class="product__hover">
                             <li><a href="{{asset('storage/'.$product->image)}}" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+{{--                            <li><a href="{{route('shop-cart.add',$product->id)}}"><span class="icon_bag_alt"></span></a></li>--}}
+                            <li><a data-id="{{$product->id}}" class="add-to-cart"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">

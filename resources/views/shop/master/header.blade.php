@@ -37,9 +37,10 @@
                         <li><a href="#"><span class="icon_heart_alt"></span>
 
                             </a></li>
-                        <li><a href="{{route('shop-cart')}}"><span class="icon_bag_alt"></span>
-
-                            </a></li>
+                        <li>
+                            <a href="{{route('shop-cart')}}"><span class="icon_bag_alt"></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
