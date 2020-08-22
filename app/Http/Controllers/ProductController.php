@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Services\ProductServices;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
@@ -61,6 +62,9 @@ class ProductController extends Controller
     public function show($id)
     {
         //
+        $product = Product::findOrFail($id);
+        $products = DB::table('products')->select('*')->orderBy('id','desc')->paginate(4);
+        return view('shop.product-details',compact('product','products'));
     }
 
     /**

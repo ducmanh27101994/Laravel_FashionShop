@@ -27,6 +27,7 @@ Route::prefix('shop-cart')->group(function (){
 });
 Route::get('/checkout','HomeController@indexCheckOut')->name('check-out');
 Route::post('/placeOder','CartController@placeOder')->name('place-oder');
+Route::get('/product-details/{id}','ProductController@show')->name('product-details');
 
 
 
@@ -42,5 +43,9 @@ Route::prefix('/admin')->group(function (){
         Route::get('/edit/{id}','ProductController@edit')->name('products.edit');
         Route::post('/edit/{id}','ProductController@update')->name('products.update');
         Route::get('/delete/{id}','ProductController@destroy')->name('products.delete');
+    });
+
+    Route::prefix('/order')->group(function (){
+        Route::get('/','BillController@index')->name('order.index');
     });
 });

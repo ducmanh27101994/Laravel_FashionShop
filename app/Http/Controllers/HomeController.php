@@ -12,7 +12,7 @@ class HomeController extends Controller
     //
 
     function index(){
-        $products = DB::table('products')->select('*')->orderBy('id','desc')->get();
+        $products = DB::table('products')->select('*')->orderBy('id','desc')->paginate(8);
         return view('shop.index',compact('products'));
     }
 
@@ -26,6 +26,7 @@ class HomeController extends Controller
     }
 
     function indexShop(){
-        return view('shop.shop');
+        $products = DB::table('products')->select('*')->orderBy('id','desc')->get();
+        return view('shop.shop',compact('products'));
     }
 }
