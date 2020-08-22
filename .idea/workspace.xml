@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a686cd5-edfe-4e01-9530-d78b7adb2808" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Bill.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597980154837</updated>
       <workItem from="1597980156458" duration="11796000" />
-      <workItem from="1598053389344" duration="8202000" />
+      <workItem from="1598053389344" duration="8511000" />
     </task>
     <servers />
   </component>
@@ -187,10 +185,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="305" y="120" width="655" height="563" key="NewPhpClassDialog" timestamp="1598056735981">
+    <state x="305" y="120" width="655" height="563" key="NewPhpClassDialog" timestamp="1598062074653">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="305" y="120" width="655" height="563" key="NewPhpClassDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598056735981" />
+    <state x="305" y="120" width="655" height="563" key="NewPhpClassDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598062074653" />
     <state x="305" y="120" width="745" height="563" key="NewPhpClassDialog/0.34.1366.734@0.34.1366.734" timestamp="1597981515164" />
     <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598056676735">
       <screen x="0" y="34" width="1366" height="734" />
