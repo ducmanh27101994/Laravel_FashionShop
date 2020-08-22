@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container">
-        <a class="btn btn-success" href="#">Add Product</a>
+        <a class="btn btn-success" href="{{route('permission.create')}}">Add User</a>
         <br><br>
         <table class="table">
             <thead class="thead-dark">
@@ -28,8 +28,7 @@
                         <td>{{$user->email}}</td>
                         <td>{{$user->role}}</td>
 
-                        <td><a class="btn btn-success" href="#">Edit</a> </td>
-                        <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="#">Delete</a> </td>
+                        <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{route('permission.delete',$user->id)}}">Delete</a> </td>
                     </tr>
                 @endforeach
             @endif

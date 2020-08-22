@@ -89,10 +89,4 @@ class UserController extends Controller
         return redirect()->route('products.index');
     }
 
-
-    function permissionList(){
-        $users = DB::table('users')->select('*')->where('role','=','admin')->orWhere('role','=','user')->get();
-
-        return view('admin.permission.list',compact('users'));
-    }
 }

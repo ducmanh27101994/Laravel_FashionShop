@@ -66,6 +66,10 @@ Route::post('/admin','UserController@storeLoginAdmin')->name('admin.store');
     });
 
     Route::prefix('/permission')->group(function (){
-        Route::get('/','UserController@permissionList')->name('permission.index');
+        Route::get('/','PermissionController@index')->name('permission.index');
+        Route::get('/create','PermissionController@create')->name('permission.create');
+        Route::post('/create','PermissionController@store')->name('permission.store');
+
+        Route::get('/delete/{id}','PermissionController@delete')->name('permission.delete');
     });
 
