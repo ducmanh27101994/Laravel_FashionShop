@@ -108,6 +108,9 @@ class CartController extends Controller
         }
 
         Session::forget('cart');
+        toastr()->success('Successful Srder', 'Thank you!');
+
+
         return redirect()->route('home');
     }
 

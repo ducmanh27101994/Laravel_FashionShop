@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    @toastr_css
 
     <!-- JavaScript -->
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
@@ -48,4 +49,7 @@
 <script src="{{asset('js/my.js')}}"></script>
 
 </body>
+@jquery
+@toastr_js
+@toastr_render
 </html>
