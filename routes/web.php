@@ -26,7 +26,7 @@ Route::prefix('shop-cart')->group(function (){
 
 });
 Route::get('/checkout','HomeController@indexCheckOut')->name('check-out');
-Route::post('/placeOder','HomeController@placeOder')->name('place-oder');
+Route::post('/placeOder','CartController@placeOder')->name('place-oder');
 
 
 
