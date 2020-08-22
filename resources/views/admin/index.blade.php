@@ -57,27 +57,46 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{route('products.index')}}" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Products</span>
-        </a>
-      </li>
+
 
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>
-
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('products.index')}}">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Products</span></a>
+        </li>
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="{{route('order.index')}}">
           <i class="fas fa-fw fa-table"></i>
           <span>Order Products</span></a>
       </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('detail.index')}}">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Report</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('detail.orderDay')}}">
+
+                <span>Report Day</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('detail.orderWeek')}}">
+
+                <span>Report Week</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('detail.orderMonth')}}">
+
+                <span>Report Month</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('detail.orderYear')}}">
+
+                <span>Report Year</span></a>
+        </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -285,7 +304,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+{{--            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>--}}
           </div>
 
           <!-- Content Row -->

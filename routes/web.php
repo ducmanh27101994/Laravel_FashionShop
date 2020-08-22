@@ -31,10 +31,6 @@ Route::get('/product-details/{id}','ProductController@show')->name('product-deta
 
 
 
-
-
-
-
 Route::prefix('/admin')->group(function (){
     Route::prefix('products')->group(function (){
         Route::get('/','ProductController@index')->name('products.index');
@@ -50,5 +46,14 @@ Route::prefix('/admin')->group(function (){
         Route::get('/detail/{id}','BillController@edit')->name('order.detail');
         Route::post('detail/{id}','BillController@update')->name('order.update');
         Route::post('/','BillController@searchBill')->name('order.search');
+    });
+    Route::prefix('/detail')->group(function (){
+        Route::get('/','DetailController@index')->name('detail.index');
+        Route::get('/year','DetailController@orderYear')->name('detail.orderYear');
+        Route::get('/month','DetailController@orderMonth')->name('detail.orderMonth');
+        Route::get('/week','DetailController@orderWeek')->name('detail.orderWeek');
+        Route::get('/day','DetailController@orderDay')->name('detail.orderDay');
+        Route::post('/search','DetailController@orderSearch')->name('detail.orderSearch');
+
     });
 });
