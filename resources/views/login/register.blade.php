@@ -38,7 +38,7 @@
               <form class="user" method="post" action="{{route('register.store')}}">
                   @csrf
                 <div class="form-group">
-                    <input name="username" type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="User Name" required>
+                    <input name="name" type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="User Name" required>
                 </div>
                 <div class="form-group">
                   <input name="email" type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address" required>

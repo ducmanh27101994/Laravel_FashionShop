@@ -37,8 +37,8 @@ Route::post('/placeOder','CartController@placeOder')->name('place-oder')->middle
 Route::get('/product-details/{id}','ProductController@show')->name('product-details');
 
 
+Route::get('admin','Usercontroller@indexLoginAdmin')->name('admin');
 
-Route::prefix('/admin')->group(function (){
     Route::prefix('products')->group(function (){
         Route::get('/','ProductController@index')->name('products.index');
         Route::get('/create','ProductController@create')->name('products.create');
@@ -63,4 +63,4 @@ Route::prefix('/admin')->group(function (){
         Route::post('/search','DetailController@orderSearch')->name('detail.orderSearch');
 
     });
-});
+

@@ -50,4 +50,8 @@ class UserController extends Controller
         return redirect()->route('login');
     }
 
+
+    function indexLoginAdmin(){
+        return view('admin.login.loginAdmin');
+    }
 }
