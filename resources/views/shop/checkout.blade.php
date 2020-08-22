@@ -74,7 +74,8 @@
                     here to enter your code.</h6>
                 </div>
             </div>
-            <form action="#" class="checkout__form">
+            <form action="{{route('place-oder')}}" class="checkout__form" method="post">
+                @csrf
                 <div class="row">
                     <div class="col-lg-8">
                         <h5>Billing detail</h5>
@@ -82,31 +83,28 @@
                             <div class="col-lg-12">
                                 <div class="checkout__form__input">
                                     <p>Full Name <span>*</span></p>
-                                    <input type="text">
+                                    <input name="customer_name" type="text" required>
                                 </div>
                             </div>
 
                             <div class="col-lg-12">
-                                <div class="checkout__form__input">
-                                    <p>Country <span>*</span></p>
-                                    <input type="text">
-                                </div>
+
                                 <div class="checkout__form__input">
                                     <p>Address <span>*</span></p>
-                                    <input type="text" placeholder="Street Address">
+                                    <input name="address" type="text" placeholder="Street Address" required>
                                 </div>
 
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
                                     <p>Phone <span>*</span></p>
-                                    <input type="text">
+                                    <input name="phone" type="text" required>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
                                     <p>Email <span>*</span></p>
-                                    <input type="text">
+                                    <input name="email" type="email" required>
                                 </div>
                             </div>
                             <div class="col-lg-12">
@@ -116,8 +114,8 @@
 
                                     <div class="checkout__form__input">
                                         <p>Oder notes <span>*</span></p>
-                                        <input type="text"
-                                        placeholder="Note about your order, e.g, special noe for delivery">
+                                        <input name="note" type="text"
+                                        placeholder="Note about your order, e.g, special noe for delivery" required>
                                     </div>
                                 </div>
                             </div>

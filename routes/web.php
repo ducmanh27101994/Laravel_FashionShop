@@ -16,10 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','HomeController@index')->name('home');
 
-Route::get('/checkout','HomeController@indexCheckOut')->name('check-out');
 Route::get('/shop','HomeController@indexShop')->name('shop');
-
-
 
 Route::prefix('shop-cart')->group(function (){
     Route::get('/','CartController@index')->name('shop-cart');
@@ -27,7 +24,11 @@ Route::prefix('shop-cart')->group(function (){
     Route::get('/delete/{id}','CartController@delete')->name('shop-cart.delete');
     Route::post('/update/{id}','CartController@update')->name('shop-cart.update');
 
+    Route::get('/checkout','HomeController@indexCheckOut')->name('check-out');
+    Route::post('/placeOder','HomeController@placeOder')->name('place-oder');
 });
+
+
 
 
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -20,7 +21,8 @@ class HomeController extends Controller
     }
 
     function indexCheckOut(){
-        return view('shop.checkout');
+        $cart = Session::get('cart');
+        return view('shop.checkout',compact('cart'));
     }
 
     function indexShop(){
