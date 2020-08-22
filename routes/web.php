@@ -17,7 +17,7 @@ Route::get('/login','UserController@indexLogin')->name('login');
 Route::post('/login','UserController@storeLogin')->name('login.store');
 Route::get('/register','UserController@indexRegister')->name('register');
 Route::post('/register','UserController@storeRegister')->name('register.store');
-
+Route::get('/logout','UserController@logOut')->name('logOut');
 
 
 Route::get('/','HomeController@index')->name('home');
@@ -29,6 +29,7 @@ Route::prefix('shop-cart')->group(function (){
     Route::get('/{id}','CartController@addCart')->name('shop-cart.add');
     Route::get('/delete/{id}','CartController@delete')->name('shop-cart.delete');
     Route::post('/update/{id}','CartController@update')->name('shop-cart.update');
+
 
 });
 Route::get('/checkout','HomeController@indexCheckOut')->name('check-out')->middleware('auth');

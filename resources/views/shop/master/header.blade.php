@@ -31,12 +31,11 @@
                     <div class="header__right__auth">
                         <a href="{{route('login')}}">Login</a>
                         <a href="{{route('register')}}">Register</a>
+                        <a href="{{route('logOut')}}">Logout</a>
                     </div>
                     <ul class="header__right__widget">
                         <li><span class="icon_search search-switch"></span></li>
-                        <li><a href="#"><span class="icon_heart_alt"></span>
 
-                            </a></li>
                         <li>
                             <a href="{{route('shop-cart')}}"><span class="icon_bag_alt"></span>
                             </a>
