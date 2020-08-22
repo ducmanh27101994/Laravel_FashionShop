@@ -39,6 +39,7 @@ Route::get('/product-details/{id}','ProductController@show')->name('product-deta
 
 Route::get('/admin','UserController@indexLoginAdmin')->name('login');
 Route::post('/admin','UserController@storeLoginAdmin')->name('admin.store');
+Route::get('/logOut','UserController@logOutAdmin')->name('admin.logout');
 
     Route::middleware('auth')->prefix('products')->group(function (){
         Route::get('/','ProductController@index')->name('products.index');

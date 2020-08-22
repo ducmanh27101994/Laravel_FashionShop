@@ -89,4 +89,11 @@ class UserController extends Controller
         return redirect()->route('products.index');
     }
 
+    function logOutAdmin()
+    {
+        Session::remove('isAuth');
+
+        return redirect()->route('login');
+    }
+
 }

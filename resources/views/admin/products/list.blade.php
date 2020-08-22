@@ -32,7 +32,9 @@
                 <td>{{$product->desc}}</td>
                 <td><img style="width: 50px; height: 65px" src="{{asset('storage/'.$product->image)}}"></td>
                 <td><a class="btn btn-success" href="{{route('products.edit',$product->id)}}">Edit</a> </td>
-                <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{route('products.delete',$product->id)}}">Delete</a> </td>
+                @can('crud-user')
+                    <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{route('products.delete',$product->id)}}">Delete</a> </td>
+                @endcan
             </tr>
                 @endforeach
             @endif

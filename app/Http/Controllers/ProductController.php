@@ -6,6 +6,7 @@ use App\Http\Services\ProductServices;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Gate;
 
 class ProductController extends Controller
 {
@@ -103,6 +104,9 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+        if (!Gate::allows('crud-user')){
+            abort(403);
+        }
         $this->productServices->delete($id);
 
 
