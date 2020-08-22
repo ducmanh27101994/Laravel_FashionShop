@@ -11,23 +11,27 @@
     </style>
     <div class="container">
 
-        <form method="post" action="#" class="form-inline">
+        <form method="post" action="{{route('order.search')}}" class="form-inline">
             @csrf
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Status: </label>
-                <select name="keyword" class="form-control" id="exampleFormControlSelect1">
-                    <option value="all">All</option>
-                    <option value="pending">Pending</option>
-                    <option value="delivering">Delivering</option>
-                    <option value="success">Success</option>
-                    <option value="cancel">Cancel</option>
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select name="keyword" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option value="all" selected>Choose...</option>
+                        <option value="pending">Pending</option>
+                        <option value="delivering">Delivering</option>
+                        <option value="success">Success</option>
+                        <option value="cancel">Cancel</option>
+                    </select>
+                </div>
 
-                </select>
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
         </form>
 
-
+<br><br>
 
         <table class="table">
             <thead class="thead-dark">
@@ -50,7 +54,7 @@
                         <td> {{++$key}}</a></td>
 
                         @if($bill->customer)
-                            <td><a href="#">#{{$bill->id}} - {{$bill->customer->customer_name}}</a></td>
+                            <td><a href="{{route('order.detail',$bill->id)}}">#{{$bill->id}} - {{$bill->customer->customer_name}}</a></td>
                         @else
                             <td>Not classified</td>
                         @endif

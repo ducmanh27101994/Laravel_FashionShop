@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bill;
 use App\Http\Services\BillServices;
 use Illuminate\Http\Request;
 
@@ -26,12 +27,25 @@ class BillController extends Controller
 
         $details = $this->billServices->showDetailById($id);
 
-        return view('details.OrderId',compact('bill','details'));
+        return view('admin.orders.DetailOrder',compact('bill','details'));
     }
 
     function update(Request $request, $id){
         $this->billServices->update($request,$id);
-        return redirect()->route('details.index');
+        return redirect()->route('order.index');
+
+    }
+
+    function searchBill(Request $request){
+        $keyword = $request->keyword;
+        if ($keyword != 'all') {
+            $bills = Bill::select('*')->where('status', '=', "$keyword")->orderBy('id','desc')->get();
+
+            return view('admin.orders.OrderProduct', compact('bills'));
+        } else {
+            $bills = $this->billServices->getAll();
+            return view('admin.orders.OrderProduct',compact('bills'));
+        }
 
     }
 }

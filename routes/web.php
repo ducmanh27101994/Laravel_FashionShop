@@ -47,5 +47,8 @@ Route::prefix('/admin')->group(function (){
 
     Route::prefix('/order')->group(function (){
         Route::get('/','BillController@index')->name('order.index');
+        Route::get('/detail/{id}','BillController@edit')->name('order.detail');
+        Route::post('detail/{id}','BillController@update')->name('order.update');
+        Route::post('/','BillController@searchBill')->name('order.search');
     });
 });

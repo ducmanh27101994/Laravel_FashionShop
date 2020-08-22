@@ -37,4 +37,6 @@ class BillRepositories
             ->where('bills.id','=',"$id")
             ->get();
     }
+
+
 }
