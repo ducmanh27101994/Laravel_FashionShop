@@ -96,9 +96,18 @@ Route::prefix('/albums')->group(function (){
     Route::get('/delete/{id}','AlbumController@destroy')->name('albums.delete');
 });
 
-
 Route::prefix('/musics')->group(function (){
     Route::get('/','MusicController@index')->name('musics.index');
+    Route::get('/create','MusicController@create')->name('musics.create');
+    Route::post('/create','MusicController@store')->name('musics.store');
+    Route::get('/edit/{id}','MusicController@edit')->name('musics.edit');
+    Route::post('/edit/{id}','MusicController@update')->name('musics.update');
+    Route::get('/delete/{id}','MusicController@destroy')->name('musics.delete');
+});
+
+
+Route::prefix('/musics')->group(function (){
+    Route::get('/','PageMusicController@index')->name('musics.index');
 
 });
 

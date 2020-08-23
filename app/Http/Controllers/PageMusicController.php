@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MusicController extends Controller
+class PageMusicController extends Controller
 {
     //
     function index(){
