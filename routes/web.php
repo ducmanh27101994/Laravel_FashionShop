@@ -106,8 +106,8 @@ Route::prefix('/musics')->group(function (){
 });
 
 
-Route::prefix('/musics')->group(function (){
-    Route::get('/','PageMusicController@index')->name('musics.index');
+Route::prefix('/Page-music')->group(function (){
+    Route::get('/','PageMusicController@index')->name('Home.musics');
 
 });
 

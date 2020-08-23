@@ -119,6 +119,11 @@
 
                 <span>Albums</span></a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('musics.index')}}">
+
+                <span>Musics</span></a>
+        </li>
 
         <hr class="sidebar-divider d-none d-md-block">
         <li class="nav-item">

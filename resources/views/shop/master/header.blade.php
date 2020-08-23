@@ -18,10 +18,9 @@
                                 <li><a href="{{route('shop')}}">Product Details</a></li>
                                 <li><a href="{{route('shop-cart')}}">Shop Cart</a></li>
                                 <li><a href="{{route('check-out')}}">Checkout</a></li>
-                                <li><a href="./blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
-                        <li><a style="color: deeppink" href="{{route('musics.index')}}">Music Online</a></li>
+                        <li><a style="color: deeppink" href="{{route('Home.musics')}}">Music Online</a></li>
 {{--                        <li><a href="./contact.html">Contact</a></li>--}}
                     </ul>
                 </nav>

@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a686cd5-edfe-4e01-9530-d78b7adb2808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/musics/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/musics/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/musics/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AlbumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AlbumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/albums/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/albums/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/albums/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/albums/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/albums/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/albums/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Album.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Album.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Music.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Music.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Singer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Singer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop/master/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/master/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +185,7 @@
       <updated>1597980154837</updated>
       <workItem from="1597980156458" duration="11796000" />
       <workItem from="1598053389344" duration="44153000" />
-      <workItem from="1598143237504" duration="14594000" />
+      <workItem from="1598143237504" duration="23439000" />
     </task>
     <servers />
   </component>
@@ -201,6 +205,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="481" y="147" width="384" height="512" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598168462972">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="481" y="147" width="384" height="512" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598168462972" />
     <state x="416" y="159" width="524" height="486" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598093981835">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
@@ -214,10 +222,10 @@
     </state>
     <state x="305" y="120" width="691" height="563" key="NewPhpClassDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598079461860" />
     <state x="305" y="120" width="745" height="563" key="NewPhpClassDialog/0.34.1366.734@0.34.1366.734" timestamp="1597981515164" />
-    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598155104032">
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598169275737">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598155104032" />
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598169275737" />
     <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734@0.34.1366.734" timestamp="1597982973645" />
     <state x="1422" y="0" width="1001" height="689" maximized="true" key="dock-window-1" timestamp="1598059193483">
       <screen x="1366" y="0" width="1280" height="1024" />
