@@ -77,9 +77,19 @@ Route::prefix('/permission')->group(function () {
 
 
 
+
+Route::prefix('/singers')->group(function (){
+    Route::get('/','SingerController@index')->name('singers.index');
+    Route::get('/create','SingerController@create')->name('singers.create');
+    Route::post('/create','SingerController@store')->name('singers.store');
+    Route::get('/edit/{id}','SingerController@edit')->name('singers.edit');
+    Route::post('/edit/{id}','SingerController@update')->name('singers.update');
+    Route::get('/delete/{id}','SingerController@destroy')->name('singers.delete');
+});
+
+
 Route::prefix('/musics')->group(function (){
     Route::get('/','MusicController@index')->name('musics.index');
-
 
 });
 
