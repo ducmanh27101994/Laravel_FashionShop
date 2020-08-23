@@ -28,7 +28,7 @@
                         <td>{{$singer->singer_name}}</td>
                         <td>{{$singer->gender}}</td>
                         <td>{{$singer->age}}</td>
-                        <td><img style="width: 50px; height: 65px" src="{{asset('storage/'.$singer->image)}}"></td>
+                        <td><img style="width: 80px; height: 80px" src="{{asset('storage/'.$singer->image)}}"></td>
                         <td><a class="btn btn-success" href="{{route('singers.edit',$singer->id)}}">Edit</a> </td>
 
                             <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{route('singers.delete',$singer->id)}}">Delete</a> </td>
