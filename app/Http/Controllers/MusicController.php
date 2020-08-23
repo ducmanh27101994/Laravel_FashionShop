@@ -88,6 +88,10 @@ class MusicController extends Controller
     public function edit($id)
     {
         //
+        $music = Music::findOrFail($id);
+        $singers = Singer::all();
+        $albums = Album::all();
+        return view('admin.musics.edit',compact('music','singers','albums'));
     }
 
     /**
@@ -100,6 +104,28 @@ class MusicController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $music = Music::findOrFail($id);
+        $music->music_name = $request->music_name;
+        $music->nation = $request->nation;
+        $music->author = $request->author;
+
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $path = $image->store('images','public');
+            $music->image = $path;
+        }
+
+        if($request->hasFile('audio')){
+            $audio = $request->file('audio');
+
+            $path1 = $audio->store('audios','public');
+            $music->audio = $path1;
+        }
+
+        $music->album_id = $request->album_id;
+        $music->singer_id = $request->singer_id;
+        $music->save();
+        return redirect()->route('musics.index');
     }
 
     /**
@@ -111,5 +137,8 @@ class MusicController extends Controller
     public function destroy($id)
     {
         //
+        $music = Music::findOrFail($id);
+        $music->delete();
+        return redirect()->route('musics.index');
     }
 }
