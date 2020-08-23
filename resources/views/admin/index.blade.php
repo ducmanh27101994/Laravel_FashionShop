@@ -43,9 +43,9 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{route('products.index')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Products Manager</span></a>
       </li>
 
       <!-- Divider -->
@@ -102,12 +102,25 @@
                 <i class="fas fa-fw fa-cog"></i>
                 <span>Permission</span></a>
         </li>
+
+        <hr class="sidebar-divider d-none d-md-block">
+        <li class="nav-item active">
+            <a class="nav-link" href="{{route('musics.index')}}">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Musics</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('singers.index')}}">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Singers</span></a>
+        </li>
+
+        <hr class="sidebar-divider d-none d-md-block">
         <li class="nav-item">
             <a class="nav-link" href="{{route('admin.logout')}}">
 
                 <span>Logout</span></a>
         </li>
-
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 

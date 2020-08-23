@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a686cd5-edfe-4e01-9530-d78b7adb2808" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SingerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SingerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +176,7 @@
       <updated>1597980154837</updated>
       <workItem from="1597980156458" duration="11796000" />
       <workItem from="1598053389344" duration="44153000" />
-      <workItem from="1598143237504" duration="7303000" />
+      <workItem from="1598143237504" duration="7626000" />
     </task>
     <servers />
   </component>
