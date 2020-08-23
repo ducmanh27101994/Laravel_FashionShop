@@ -87,6 +87,15 @@ Route::prefix('/singers')->group(function (){
     Route::get('/delete/{id}','SingerController@destroy')->name('singers.delete');
 });
 
+Route::prefix('/albums')->group(function (){
+    Route::get('/','AlbumController@index')->name('albums.index');
+    Route::get('/create','AlbumController@create')->name('albums.create');
+    Route::post('/create','AlbumController@store')->name('albums.store');
+    Route::get('/edit/{id}','AlbumController@edit')->name('albums.edit');
+    Route::post('/edit/{id}','AlbumController@update')->name('albums.update');
+    Route::get('/delete/{id}','AlbumController@destroy')->name('albums.delete');
+});
+
 
 Route::prefix('/musics')->group(function (){
     Route::get('/','MusicController@index')->name('musics.index');

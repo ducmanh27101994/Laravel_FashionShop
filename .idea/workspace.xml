@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a686cd5-edfe-4e01-9530-d78b7adb2808" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/singers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/singers/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/singers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/singers/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/singers/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/singers/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/albums/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/albums/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/albums/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +179,7 @@
       <updated>1597980154837</updated>
       <workItem from="1597980156458" duration="11796000" />
       <workItem from="1598053389344" duration="44153000" />
-      <workItem from="1598143237504" duration="8947000" />
+      <workItem from="1598143237504" duration="9527000" />
     </task>
     <servers />
   </component>
@@ -212,10 +212,10 @@
     </state>
     <state x="305" y="120" width="691" height="563" key="NewPhpClassDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598079461860" />
     <state x="305" y="120" width="745" height="563" key="NewPhpClassDialog/0.34.1366.734@0.34.1366.734" timestamp="1597981515164" />
-    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598152941210">
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598155104032">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598152941210" />
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598155104032" />
     <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734@0.34.1366.734" timestamp="1597982973645" />
     <state x="1422" y="0" width="1001" height="689" maximized="true" key="dock-window-1" timestamp="1598059193483">
       <screen x="1366" y="0" width="1280" height="1024" />
