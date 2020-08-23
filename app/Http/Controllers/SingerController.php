@@ -75,6 +75,8 @@ class SingerController extends Controller
     public function edit($id)
     {
         //
+        $singer = Singer::findOrFail($id);
+        return view('admin.singers.edit',compact('singer'));
     }
 
     /**
@@ -87,6 +89,18 @@ class SingerController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $singer = Singer::findOrFail($id);
+        $singer->singer_name = $request->singer_name;
+        $singer->gender = $request->gender;
+        $singer->age = $request->age;
+
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $path = $image->store('images','public');
+            $singer->image = $path;
+        }
+        $singer->save();
+        return redirect()->route('singers.index');
     }
 
     /**
@@ -98,5 +112,8 @@ class SingerController extends Controller
     public function destroy($id)
     {
         //
+        $singer = Singer::findOrFail($id);
+        $singer->delete();
+        return redirect()->route('singers.index');
     }
 }
