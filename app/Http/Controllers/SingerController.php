@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Singer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class SingerController extends Controller
 {
@@ -94,7 +95,11 @@ class SingerController extends Controller
         $singer->gender = $request->gender;
         $singer->age = $request->age;
 
-        if($request->hasFile('image')){
+        if ($request->hasFile('image')){
+            $currentImg = $singer->image;
+            if($currentImg){
+                Storage::delete('/public'.$currentImg);
+            }
             $image = $request->file('image');
             $path = $image->store('images','public');
             $singer->image = $path;

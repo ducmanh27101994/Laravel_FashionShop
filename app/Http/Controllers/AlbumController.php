@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Album;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AlbumController extends Controller
 {
@@ -14,6 +16,8 @@ class AlbumController extends Controller
     public function index()
     {
         //
+        $albums = DB::table('albums')->select('*')->orderBy('id','desc')->get();
+        return view('admin.albums.list',compact('albums'));
     }
 
     /**
@@ -24,6 +28,7 @@ class AlbumController extends Controller
     public function create()
     {
         //
+        return view('admin.albums.create');
     }
 
     /**
@@ -35,6 +40,17 @@ class AlbumController extends Controller
     public function store(Request $request)
     {
         //
+        $album = new Album();
+        $album->album_name = $request->album_name;
+        $album->category = $request->category;
+
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $path = $image->store('images','public');
+            $album->image = $path;
+        }
+        $album->save();
+        return redirect()->route('albums.index');
     }
 
     /**
@@ -57,6 +73,8 @@ class AlbumController extends Controller
     public function edit($id)
     {
         //
+        $album = Album::findOrFail($id);
+
     }
 
     /**
