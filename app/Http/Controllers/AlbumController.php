@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Album;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class AlbumController extends Controller
 {
@@ -74,7 +75,7 @@ class AlbumController extends Controller
     {
         //
         $album = Album::findOrFail($id);
-
+        return view('admin.albums.edit',compact('album'));
     }
 
     /**
@@ -87,6 +88,22 @@ class AlbumController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $album = Album::findOrFail($id);
+        $album->album_name = $request->album_name;
+        $album->category = $request->category;
+
+        if ($request->hasFile('image')){
+            $currentImg = $album->image;
+            if($currentImg){
+                Storage::delete('/public'.$currentImg);
+            }
+            $image = $request->file('image');
+            $path = $image->store('images','public');
+            $album->image = $path;
+        }
+        $album->save();
+        return redirect()->route('albums.index');
+
     }
 
     /**
@@ -98,5 +115,8 @@ class AlbumController extends Controller
     public function destroy($id)
     {
         //
+        $album = Album::findOrFail($id);
+        $album->delete();
+        return redirect()->route('albums.index');
     }
 }
