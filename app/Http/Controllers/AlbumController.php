@@ -75,7 +75,8 @@ class AlbumController extends Controller
     {
         //
         $album = Album::findOrFail($id);
-        return view('admin.albums.edit',compact('album'));
+        $albums = Album::all();
+        return view('admin.albums.edit',compact('album','albums'));
     }
 
     /**

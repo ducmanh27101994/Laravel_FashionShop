@@ -111,8 +111,13 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{route('singers.index')}}">
-                <i class="fas fa-fw fa-chart-area"></i>
+
                 <span>Singers</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('albums.index')}}">
+
+                <span>Albums</span></a>
         </li>
 
         <hr class="sidebar-divider d-none d-md-block">
