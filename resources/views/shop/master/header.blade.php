@@ -21,8 +21,8 @@
                                 <li><a href="./blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a style="color: deeppink" href="{{route('musics.index')}}">Music Online</a></li>
+{{--                        <li><a href="./contact.html">Contact</a></li>--}}
                     </ul>
                 </nav>
             </div>

@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a686cd5-edfe-4e01-9530-d78b7adb2808" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Laravel_FashionShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laravel_FashionShop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/shop-cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/shop-cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop/master/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/master/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +35,14 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,6 +150,7 @@
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gOKMfyjfQYCCnq2AMCURxeZ4mh" />
@@ -151,7 +161,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laravel/ProductManager" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -169,7 +180,8 @@
       <option name="presentableId" value="Default" />
       <updated>1597980154837</updated>
       <workItem from="1597980156458" duration="11796000" />
-      <workItem from="1598053389344" duration="10183000" />
+      <workItem from="1598053389344" duration="44153000" />
+      <workItem from="1598143237504" duration="3917000" />
     </task>
     <servers />
   </component>
@@ -189,15 +201,23 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="305" y="120" width="655" height="563" key="NewPhpClassDialog" timestamp="1598062074653">
+    <state x="416" y="159" width="524" height="486" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598093981835">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="305" y="120" width="655" height="563" key="NewPhpClassDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598062074653" />
+    <state x="416" y="159" width="524" height="486" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598093981835" />
+    <state x="462" y="159" key="FileChooserDialogImpl" timestamp="1598063887568">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="462" y="159" key="FileChooserDialogImpl/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598063887568" />
+    <state x="305" y="120" width="691" height="563" key="NewPhpClassDialog" timestamp="1598079461860">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="305" y="120" width="691" height="563" key="NewPhpClassDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598079461860" />
     <state x="305" y="120" width="745" height="563" key="NewPhpClassDialog/0.34.1366.734@0.34.1366.734" timestamp="1597981515164" />
-    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598056676735">
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598095662122">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598056676735" />
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598095662122" />
     <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734@0.34.1366.734" timestamp="1597982973645" />
     <state x="1422" y="0" width="1001" height="689" maximized="true" key="dock-window-1" timestamp="1598059193483">
       <screen x="1366" y="0" width="1280" height="1024" />

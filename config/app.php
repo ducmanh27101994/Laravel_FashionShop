@@ -134,6 +134,8 @@ return [
     |
     */
 
+    'mp3_api_url'=> env('MP3_API_URL'),
+
     'providers' => [
 
         /*
