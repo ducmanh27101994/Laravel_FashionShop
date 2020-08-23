@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Singer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SingerController extends Controller
 {
@@ -14,6 +16,9 @@ class SingerController extends Controller
     public function index()
     {
         //
+        $singers = DB::table('singers')->select('*')->orderBy('id','desc')->get();
+        return view('admin.singers.list',compact('singers'));
+
     }
 
     /**
@@ -24,6 +29,7 @@ class SingerController extends Controller
     public function create()
     {
         //
+        return view('admin.singers.create');
     }
 
     /**
@@ -35,6 +41,18 @@ class SingerController extends Controller
     public function store(Request $request)
     {
         //
+        $singer = new Singer();
+        $singer->singer_name = $request->singer_name;
+        $singer->gender = $request->gender;
+        $singer->age = $request->age;
+
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $path = $image->store('images','public');
+            $singer->image = $path;
+        }
+        $singer->save();
+        return redirect()->route('singers.index');
     }
 
     /**
