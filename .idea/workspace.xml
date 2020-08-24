@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a686cd5-edfe-4e01-9530-d78b7adb2808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/email.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PermissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PermissionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/permission/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/permission/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/OrderProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/OrderProduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,8 @@
       <workItem from="1598143237504" duration="23439000" />
       <workItem from="1598177226265" duration="1858000" />
       <workItem from="1598200265197" duration="2764000" />
-      <workItem from="1598229140601" duration="23805000" />
+      <workItem from="1598229140601" duration="26399000" />
+      <workItem from="1598275950381" duration="3583000" />
     </task>
     <servers />
   </component>
@@ -221,11 +222,15 @@
     </state>
     <state x="305" y="120" width="691" height="563" key="NewPhpClassDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598079461860" />
     <state x="305" y="120" width="745" height="563" key="NewPhpClassDialog/0.34.1366.734@0.34.1366.734" timestamp="1597981515164" />
-    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598169275737">
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog" timestamp="1598277249777">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
-    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598169275737" />
+    <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598277249777" />
     <state x="458" y="326" width="440" height="151" key="NewPhpFileDialog/0.34.1366.734@0.34.1366.734" timestamp="1597982973645" />
+    <state x="477" y="93" width="402" height="618" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598277154190">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="477" y="93" width="402" height="618" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.34.1366.734/1366.0.1280.1024@0.34.1366.734" timestamp="1598277154190" />
     <state x="1422" y="0" width="1001" height="689" maximized="true" key="dock-window-1" timestamp="1598059193483">
       <screen x="1366" y="0" width="1280" height="1024" />
     </state>

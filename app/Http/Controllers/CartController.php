@@ -9,6 +9,7 @@ use App\Detail;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Mail;
 
 class CartController extends Controller
 {
@@ -106,6 +107,14 @@ class CartController extends Controller
             $details->quantityOrder = $product['totalQty'];
             $details[$key] = $details->save();
         }
+
+        Mail::send('emails.email',[
+            'customer_name'=>$request->customer_name,
+        ],function ($email) use ($request){
+            $email->to('ducmanh27101994@gmail.com',$request->customer_name);
+            $email->from($request->email);
+            $email->subject('Test mail');
+        });
 
         Session::forget('cart');
         toastr()->success('Successful Order', 'Thank you!');

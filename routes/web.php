@@ -110,6 +110,7 @@ Route::prefix('/Page-music')->group(function (){
     Route::get('/','PageMusicController@index')->name('Home.musics');
     Route::get('{id}','PageMusicController@showAlbums')->name('musics.albums');
 
-
 });
+
+Route::get('laravel-send-email', 'EmailController@sendEMail');
 
