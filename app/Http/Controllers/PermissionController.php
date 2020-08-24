@@ -11,7 +11,7 @@ class PermissionController extends Controller
 {
     //
     function index(){
-        $users = DB::table('users')->select('*')->where('role','=','admin')->orWhere('role','=','user')->get();
+        $users = DB::table('users')->select('*')->where('role','=','admin')->orWhere('role','=','user')->orWhere('role','=','music')->get();
 
         return view('admin.permission.list',compact('users'));
     }
@@ -33,7 +33,7 @@ class PermissionController extends Controller
 
     function edit($id){
         $user = User::findOrFail($id);
-        $users = DB::table('users')->select('*')->where('role','=','admin')->orWhere('role','=','user')->get();
+        $users = DB::table('users')->select('*')->where('role','=','admin')->orWhere('role','=','user')->orWhere('role','=','music')->get();
         return view('admin.permission.edit',compact('user','users'));
     }
 

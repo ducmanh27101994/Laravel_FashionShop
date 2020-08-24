@@ -32,5 +32,15 @@ class AuthServiceProvider extends ServiceProvider
            }
            return false;
         });
+
+        Gate::define('music',function ($user){
+            if ($user->role == 'admin'){
+                return true;
+            }
+            return false;
+        });
+
+
+
     }
 }

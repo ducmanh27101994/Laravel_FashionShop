@@ -29,6 +29,7 @@
                     <select name="role" class="form-control" id="exampleFormControlSelect1">
                         <option value="admin">Admin</option>
                         <option value="user">User</option>
+                        <option value="music">Music</option>
                     </select>
                 </div>
 

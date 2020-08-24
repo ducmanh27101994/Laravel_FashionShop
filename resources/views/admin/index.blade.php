@@ -40,7 +40,7 @@
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
-
+        @can('music')
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="{{route('products.index')}}">
@@ -102,8 +102,9 @@
                 <i class="fas fa-fw fa-cog"></i>
                 <span>Permission</span></a>
         </li>
-
+            @endcan
         <hr class="sidebar-divider d-none d-md-block">
+
         <li class="nav-item active">
             <a class="nav-link" href="{{route('musics.index')}}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
