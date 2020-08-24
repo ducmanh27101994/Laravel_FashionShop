@@ -17,7 +17,7 @@ class BillRepositories
     }
 
     function getAll(){
-        return $this->bill->select('*')->orderBy('id','desc')->get();
+        return $this->bill->select('*')->orderBy('id','desc')->paginate(10);
     }
 
     function save($bill){
