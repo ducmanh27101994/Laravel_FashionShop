@@ -129,7 +129,7 @@
                             </div>
 
                             <div class="buy-tickets">
-                                <a href="#" class="btn musica-btn">Show Albums</a>
+                                <a href="{{route('musics.albums',$album->id)}}" class="btn musica-btn">Show Albums</a>
                             </div>
                         </div>
                             @endforeach
@@ -145,6 +145,13 @@
 
     <!-- ##### Music Player Area Start ##### -->
     <div class="music-player-area section-padding-100">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2 style="color: deeppink">HOT MUSIC</h2>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -196,10 +203,10 @@
                             <div class="album-info mb-50 d-flex flex-wrap align-items-center justify-content-between">
                                 <div class="album-title">
                                     <h6>Featured album</h6>
-                                    <h4>Love is all Around</h4>
+                                    <h4>{{$lists[0]->album_name}}</h4>
                                 </div>
                                 <div class="album-buy-now">
-                                    <a href="#" class="btn musica-btn">Buy it on Itunes</a>
+                                    <a href="{{route('musics.albums',$lists[0]->id)}}" class="btn musica-btn">Show AlBums</a>
                                 </div>
                             </div>
 
@@ -208,99 +215,20 @@
                                 <!-- Music Playlist -->
                                 <div class="music-playlist">
                                     <!-- Single Song -->
+
+                                    @if(empty($lists))
+                                        <tr><td>No Data</td></tr>
+                                    @else
+                                        @foreach($lists as $list)
                                     <div class="single-music active">
-                                        <h6>Drop that beat</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="{{asset('music/audio/dummy-audio.mp3')}}">
+                                        <h6>{{$list->music_name}}</h6>
+                                        <audio controls>
+                                            <source src="{{asset('storage/'.$list->audio)}}">
                                         </audio>
                                     </div>
+                                        @endforeach
+                                    @endif
 
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Hey, Mister Dj</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Message to my future self</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Bring back the love</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Hey, Mister Dj - Remix</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Message to my future self</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Drop that beat</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Hey, Mister Dj</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Message to my future self</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Bring back the love</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Hey, Mister Dj - Remix</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
-
-                                    <!-- Single Song -->
-                                    <div class="single-music">
-                                        <h6>Message to my future self</h6>
-                                        <audio preload="auto" controls>
-                                            <source src="audio/dummy-audio.mp3">
-                                        </audio>
-                                    </div>
                                 </div>
                             </div>
 
@@ -308,10 +236,10 @@
                             <div class="now-playing d-flex flex-wrap align-items-center justify-content-between">
                                 <div class="songs-name">
                                     <p>Playing</p>
-                                    <h6>Drop that beat</h6>
+                                    <h6>{{$lists[0]->music_name}}</h6>
                                 </div>
-                                <audio preload="auto" controls>
-                                    <source src="audio/dummy-audio.mp3">
+                                <audio controls>
+                                    <source src="{{asset('storage/'.$lists[0]->audio)}}">
                                 </audio>
                             </div>
 

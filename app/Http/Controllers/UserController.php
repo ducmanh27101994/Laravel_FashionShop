@@ -54,7 +54,7 @@ class UserController extends Controller
             if ($user->email == $request->email && $user->password == $request->password) {
                 Session::put('loginAuth', true);
                 toastr()->success('Login Success', 'Success!');
-                return redirect()->route('home');
+                return redirect()->route('shop-cart');
             }
         }
         toastr()->error('Please try again', 'Error!');
