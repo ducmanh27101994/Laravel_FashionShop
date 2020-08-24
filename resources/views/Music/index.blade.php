@@ -160,16 +160,15 @@
                             <div class="music-info d-flex justify-content-between">
                                 <div class="music-text">
                                     <h5>{{$music->music_name}}</h5>
-                                    <p>Love is all Around</p>
+                                    <p>{{$music->author}}</p>
                                 </div>
                                 <div class="music-play-icon">
-                                    <audio preload="auto" controls>
-                                    <source src="{{asset('music/audio/dummy-audio.mp3')}}">
+                                    <audio controls>
+                                    <source src="{{asset('storage/'.$music->audio)}}">
                                 </audio>
                                 </div>
                             </div>
                         </div>
-
 
                             @endforeach
                         @endif

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Album;
 use App\Music;
 use Illuminate\Http\Request;
-use function GuzzleHttp\Promise\all;
+
 
 class PageMusicController extends Controller
 {
@@ -17,7 +17,9 @@ class PageMusicController extends Controller
         return view('Music.index',compact('musics','albums'));
     }
 
+    function showAlbum(){
 
+    }
 
 
 }
