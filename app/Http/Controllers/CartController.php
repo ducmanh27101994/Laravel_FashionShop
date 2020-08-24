@@ -109,11 +109,17 @@ class CartController extends Controller
         }
 
         Mail::send('emails.email',[
-            'customer_name'=>$request->customer_name,
+            'bill'=>$bill->id,
+            'name'=>$request->customer_name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'address' => $request->address,
+            'totalPrice'=>$cart->totalPrice,
+
         ],function ($email) use ($request){
             $email->to('ducmanh27101994@gmail.com',$request->customer_name);
             $email->from($request->email);
-            $email->subject('Test mail');
+            $email->subject('Order Product');
         });
 
         Session::forget('cart');
