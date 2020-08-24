@@ -20,6 +20,9 @@
         .owl-carousel .owl-item img {
             width: 100% !important;
         }
+        #col-12{
+            margin-left: 100px;
+        }
     </style>
 </head>
 
@@ -104,7 +107,7 @@
             </div>
 
             <div class="row">
-                <div class="col-12">
+                <div id="col-12" class="col-12">
                     <!-- Upcoming Shows Content -->
 
                     <div class="upcoming-shows-content">
@@ -121,7 +124,6 @@
                                 </div>
                                 <div class="shows-name">
                                     <h6>{{$album->album_name}}</h6>
-                                    <p></p>
                                 </div>
                             </div>
                             <div class="shows-location">
@@ -134,8 +136,6 @@
                         </div>
                             @endforeach
                         @endif
-
-
                     </div>
                 </div>
             </div>
