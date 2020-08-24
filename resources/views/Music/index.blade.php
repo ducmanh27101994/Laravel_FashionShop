@@ -16,10 +16,15 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="{{asset('music/style.css')}}">
-
+    <style>
+        .owl-carousel .owl-item img {
+            width: 100% !important;
+        }
+    </style>
 </head>
 
 <body>
+
     <!-- ##### Preloader ##### -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="circle-preloader">
@@ -27,107 +32,7 @@
         </div>
     </div>
 
-    <!-- ##### Header Area Start ##### -->
-{{--    <header class="header-area">--}}
-{{--        <!-- Navbar Area -->--}}
-{{--        <div class="musica-main-menu">--}}
-{{--            <div class="classy-nav-container breakpoint-off">--}}
-{{--                <div class="container-fluid">--}}
-{{--                    <!-- Menu -->--}}
-{{--                    <nav class="classy-navbar justify-content-between" id="musicaNav">--}}
 
-{{--                        <!-- Nav brand -->--}}
-{{--                        <a href="index.html" class="nav-brand"><img src="{{asset('img/core-img/logo.png')}}" alt=""></a>--}}
-
-{{--                        <!-- Navbar Toggler -->--}}
-{{--                        <div class="classy-navbar-toggler">--}}
-{{--                            <span class="navbarToggler"><span></span><span></span><span></span></span>--}}
-{{--                        </div>--}}
-
-{{--                        <!-- Menu -->--}}
-{{--                        <div class="classy-menu">--}}
-
-{{--                            <!-- close btn -->--}}
-{{--                            <div class="classycloseIcon">--}}
-{{--                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>--}}
-{{--                            </div>--}}
-
-{{--                            <!-- Nav Start -->--}}
-{{--                            <div class="classynav">--}}
-{{--                                <ul>--}}
-{{--                                    <li><a href="index.html">Home</a></li>--}}
-{{--                                    <li><a href="about-us.html">About us</a></li>--}}
-{{--                                    <li><a href="#">Pages</a>--}}
-{{--                                        <ul class="dropdown">--}}
-{{--                                            <li><a href="index.html">Home</a></li>--}}
-{{--                                            <li><a href="about-us.html">About Us</a></li>--}}
-{{--                                            <li><a href="concert-tours.html">Concert &amp; Tours</a></li>--}}
-{{--                                            <li><a href="blog.html">News</a></li>--}}
-{{--                                            <li><a href="contact.html">Contact</a></li>--}}
-{{--                                            <li><a href="elements.html">Elements</a></li>--}}
-{{--                                        </ul>--}}
-{{--                                    </li>--}}
-{{--                                    <li><a href="#">Mega Menu</a>--}}
-{{--                                        <div class="megamenu">--}}
-{{--                                            <ul class="single-mega cn-col-4">--}}
-{{--                                                <li><a href="index.html">Home</a></li>--}}
-{{--                                                <li><a href="about-us.html">About Us</a></li>--}}
-{{--                                                <li><a href="concert-tours.html">Concert &amp; Tours</a></li>--}}
-{{--                                                <li><a href="blog.html">News</a></li>--}}
-{{--                                                <li><a href="contact.html">Contact</a></li>--}}
-{{--                                                <li><a href="elements.html">Elements</a></li>--}}
-{{--                                            </ul>--}}
-{{--                                            <ul class="single-mega cn-col-4">--}}
-{{--                                                <li><a href="index.html">Home</a></li>--}}
-{{--                                                <li><a href="about-us.html">About Us</a></li>--}}
-{{--                                                <li><a href="concert-tours.html">Concert &amp; Tours</a></li>--}}
-{{--                                                <li><a href="blog.html">News</a></li>--}}
-{{--                                                <li><a href="contact.html">Contact</a></li>--}}
-{{--                                                <li><a href="elements.html">Elements</a></li>--}}
-{{--                                            </ul>--}}
-{{--                                            <ul class="single-mega cn-col-4">--}}
-{{--                                                <li><a href="index.html">Home</a></li>--}}
-{{--                                                <li><a href="about-us.html">About Us</a></li>--}}
-{{--                                                <li><a href="concert-tours.html">Concert &amp; Tours</a></li>--}}
-{{--                                                <li><a href="blog.html">News</a></li>--}}
-{{--                                                <li><a href="contact.html">Contact</a></li>--}}
-{{--                                                <li><a href="elements.html">Elements</a></li>--}}
-{{--                                            </ul>--}}
-{{--                                            <ul class="single-mega cn-col-4">--}}
-{{--                                                <li><a href="index.html">Home</a></li>--}}
-{{--                                                <li><a href="about-us.html">About Us</a></li>--}}
-{{--                                                <li><a href="concert-tours.html">Concert &amp; Tours</a></li>--}}
-{{--                                                <li><a href="blog.html">News</a></li>--}}
-{{--                                                <li><a href="contact.html">Contact</a></li>--}}
-{{--                                                <li><a href="elements.html">Elements</a></li>--}}
-{{--                                            </ul>--}}
-{{--                                        </div>--}}
-{{--                                    </li>--}}
-{{--                                    <li><a href="concert-tours.html">Gallery</a></li>--}}
-{{--                                    <li><a href="contact.html">Contact</a></li>--}}
-{{--                                </ul>--}}
-
-{{--                                <!-- Social Button -->--}}
-{{--                                <div class="top-social-info">--}}
-{{--                                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>--}}
-{{--                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>--}}
-{{--                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>--}}
-{{--                                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>--}}
-{{--                                    <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>--}}
-{{--                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>--}}
-{{--                                </div>--}}
-
-{{--                            </div>--}}
-{{--                            <!-- Nav End -->--}}
-{{--                        </div>--}}
-{{--                    </nav>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </header>--}}
-    <!-- ##### Header Area End ##### -->
-
-    <!-- ##### Hero Area Start ##### -->
     <section class="hero-area">
         <div class="hero-slides owl-carousel">
 
@@ -138,7 +43,7 @@
                 <!-- Slide Content -->
                 <div class="hero-slides-content text-center">
                     <h2 data-animation="fadeInUp" data-delay="100ms">Musica <span>Musica</span></h2>
-                    <p data-animation="fadeInUp" data-delay="300ms">Music Theme</p>
+                    <p data-animation="fadeInUp" data-delay="300ms">K-Pop</p>
                 </div>
                 <!-- Big Text -->
                 <h2 class="big-text">Musica</h2>
@@ -150,8 +55,8 @@
                 <div class="slide-img bg-img" style="background-image: url({{asset('music/img/bg-img/bg-2.jpg')}});"></div>
                 <!-- Slide Content -->
                 <div class="hero-slides-content text-center">
-                    <h2 data-animation="fadeInUp" data-delay="100ms">Colorlib <span>Colorlib</span></h2>
-                    <p data-animation="fadeInUp" data-delay="300ms">Music Template</p>
+                    <h2 data-animation="fadeInUp" data-delay="100ms">V-Pop <span>Colorlib</span></h2>
+                    <p data-animation="fadeInUp" data-delay="300ms">Music</p>
                 </div>
                 <!-- Big Text -->
                 <h2 class="big-text">Colorlib</h2>
@@ -160,11 +65,11 @@
             <!-- Single Hero Slide -->
             <div class="single-hero-slide d-flex align-items-center justify-content-center">
                 <!-- Slide Img -->
-                <div class="slide-img bg-img" style="background-image: url({{asset('music/ img/bg-img/bg-3.jpg')}});"></div>
+                <div class="slide-img bg-img" style="background-image: url({{asset('music/img/bg-img/bg-3.jpg')}});"></div>
                 <!-- Slide Content -->
                 <div class="hero-slides-content text-center">
-                    <h2 data-animation="fadeInUp" data-delay="100ms">Festival <span>Festival</span></h2>
-                    <p data-animation="fadeInUp" data-delay="300ms">Free Themes</p>
+                    <h2 data-animation="fadeInUp" data-delay="100ms">C-Pop <span>Festival</span></h2>
+                    <p data-animation="fadeInUp" data-delay="300ms">Best Music</p>
                 </div>
                 <!-- Big Text -->
                 <h2 class="big-text">Festival</h2>
@@ -192,7 +97,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading">
-                        <h2>Upcoming shows</h2>
+                        <h2>ALBUMS HOT</h2>
                         <h6>Sed porta cursus enim, vitae maximus felis luctus iaculis.</h6>
                     </div>
                 </div>
@@ -201,107 +106,35 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Upcoming Shows Content -->
+
                     <div class="upcoming-shows-content">
-
+                    @if(empty($albums))
+                        <tr><td>No Data</td></tr>
+                    @else
+                        @foreach($albums as $album)
                         <!-- Single Upcoming Shows -->
                         <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
-                            <div class="shows-date">
-                                <h2>17 <span>July</span></h2>
-                            </div>
+
                             <div class="shows-desc d-flex align-items-center">
                                 <div class="shows-img">
-                                    <img src="{{asset('music/img/bg-img/s1.jpg')}}" alt="">
+                                    <img src="{{asset('storage/'.$album->image)}}" alt="">
                                 </div>
                                 <div class="shows-name">
-                                    <h6>Electric castle Festival</h6>
-                                    <p>Cluj, Romania</p>
+                                    <h6>{{$album->album_name}}</h6>
+                                    <p></p>
                                 </div>
                             </div>
                             <div class="shows-location">
-                                <p>At the Castle</p>
+                                <p>{{$album->category}}</p>
                             </div>
-                            <div class="shows-time">
-                                <p>20:30</p>
-                            </div>
-                            <div class="buy-tickets">
-                                <a href="#" class="btn musica-btn">Buy Tikets</a>
-                            </div>
-                        </div>
 
-                        <!-- Single Upcoming Shows -->
-                        <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
-                            <div class="shows-date">
-                                <h2>23 <span>July</span></h2>
-                            </div>
-                            <div class="shows-desc d-flex align-items-center">
-                                <div class="shows-img">
-                                    <img src="img/bg-img/s2.jpg" alt="">
-                                </div>
-                                <div class="shows-name">
-                                    <h6>Electric Festival</h6>
-                                    <p>Manhathan, NY, USA</p>
-                                </div>
-                            </div>
-                            <div class="shows-location">
-                                <p>Main Stadium</p>
-                            </div>
-                            <div class="shows-time">
-                                <p>21:30</p>
-                            </div>
                             <div class="buy-tickets">
-                                <a href="#" class="btn musica-btn">Buy Tikets</a>
+                                <a href="#" class="btn musica-btn">Show Albums</a>
                             </div>
                         </div>
+                            @endforeach
+                        @endif
 
-                        <!-- Single Upcoming Shows -->
-                        <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
-                            <div class="shows-date">
-                                <h2>25 <span>July</span></h2>
-                            </div>
-                            <div class="shows-desc d-flex align-items-center">
-                                <div class="shows-img">
-                                    <img src="img/bg-img/s3.jpg" alt="">
-                                </div>
-                                <div class="shows-name">
-                                    <h6>Sunflower festival</h6>
-                                    <p>Paris, France</p>
-                                </div>
-                            </div>
-                            <div class="shows-location">
-                                <p>Sunflower Arena</p>
-                            </div>
-                            <div class="shows-time">
-                                <p>20:30</p>
-                            </div>
-                            <div class="buy-tickets">
-                                <a href="#" class="btn musica-btn">Buy Tikets</a>
-                            </div>
-                        </div>
-
-                        <!-- Single Upcoming Shows -->
-                        <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
-                            <div class="shows-date">
-                                <h2>30 <span>July</span></h2>
-                            </div>
-                            <div class="shows-desc d-flex align-items-center">
-                                <div class="shows-img">
-                                    <img src="img/bg-img/s4.jpg" alt="">
-                                </div>
-                                <div class="shows-name">
-                                    <h6>Electric castle Festival</h6>
-                                    <p>Cluj, Romania</p>
-                                </div>
-                            </div>
-                            <div class="shows-location">
-                                <p>At the Castle</p>
-                            </div>
-                            <div class="shows-time">
-                                <p>20:30</p>
-                            </div>
-                            <div class="buy-tickets">
-                                <a href="#" class="btn musica-btn">Buy Tikets</a>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -316,14 +149,17 @@
             <div class="row">
                 <div class="col-12">
                     <div class="music-player-slides owl-carousel">
-
+                    @if(empty($musics))
+                        <tr><td>No Data</td></tr>
+                    @else
+                        @foreach($musics as $music)
                         <!-- Single Music Player -->
                         <div class="single-music-player">
-                            <img src="{{asset('music/img/bg-img/mp1.jpg')}}" alt="">
+                            <img style="width: 300px;height: 200px" src="{{asset('storage/'.$music->image)}}" alt="">
 
                             <div class="music-info d-flex justify-content-between">
                                 <div class="music-text">
-                                    <h5>Artist’s/Band Name</h5>
+                                    <h5>{{$music->music_name}}</h5>
                                     <p>Love is all Around</p>
                                 </div>
                                 <div class="music-play-icon">
@@ -334,57 +170,9 @@
                             </div>
                         </div>
 
-                        <!-- Single Music Player -->
-                        <div class="single-music-player">
-                            <img src="{{asset('music/img/bg-img/mp2.jpg')}}" alt="">
 
-                            <div class="music-info d-flex justify-content-between">
-                                <div class="music-text">
-                                    <h5>Artist’s/Band Name</h5>
-                                    <p>Love is all Around</p>
-                                </div>
-                                <div class="music-play-icon">
-                                    <audio preload="auto" controls>
-                                    <source src="audio/dummy-audio.mp3">
-                                </audio>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Music Player -->
-                        <div class="single-music-player">
-                            <img src="img/bg-img/mp3.jpg" alt="">
-
-                            <div class="music-info d-flex justify-content-between">
-                                <div class="music-text">
-                                    <h5>Artist’s/Band Name</h5>
-                                    <p>Love is all Around</p>
-                                </div>
-                                <div class="music-play-icon">
-                                    <audio preload="auto" controls>
-                                    <source src="audio/dummy-audio.mp3">
-                                </audio>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Music Player -->
-                        <div class="single-music-player">
-                            <img src="img/bg-img/mp4.jpg" alt="">
-
-                            <div class="music-info d-flex justify-content-between">
-                                <div class="music-text">
-                                    <h5>Artist’s/Band Name</h5>
-                                    <p>Love is all Around</p>
-                                </div>
-                                <div class="music-play-icon">
-                                    <audio preload="auto" controls>
-                                    <source src="audio/dummy-audio.mp3">
-                                </audio>
-                                </div>
-                            </div>
-                        </div>
-
+                            @endforeach
+                        @endif
                     </div>
                 </div>
             </div>
@@ -400,7 +188,7 @@
                     <div class="featured-album-content d-flex flex-wrap">
 
                         <!-- Album Thumbnail -->
-                        <div class="album-thumbnail h-100 bg-img" style="background-image: url(img/bg-img/bg-4.jpg);"></div>
+                        <div class="album-thumbnail h-100 bg-img" style="background-image: url({{asset('music/img/bg-img/bg-4.jpg')}});"></div>
 
                         <!-- Album Songs -->
                         <div class="album-songs h-100">
@@ -539,7 +327,7 @@
     <!-- ##### Music Artists Area Start ##### -->
     <div class="musica-music-artists-area d-flex flex-wrap clearfix">
         <!-- Music Search -->
-        <div class="music-search bg-img bg-overlay2 wow fadeInUp" data-wow-delay="300ms" style="background-image: url(img/bg-img/bg-9.jpg);">
+        <div class="music-search bg-img bg-overlay2 wow fadeInUp" data-wow-delay="300ms" style="background-image: url({{asset('music/img/bg-img/bg-9.jpg')}});">
             <!-- Content -->
             <div class="music-search-content">
                 <h2>Music</h2>
@@ -548,7 +336,7 @@
         </div>
 
         <!-- Artists Search -->
-        <div class="artists-search bg-img bg-overlay2 wow fadeInUp" data-wow-delay="600ms" style="background-image: url(img/bg-img/bg-1.jpg);">
+        <div class="artists-search bg-img bg-overlay2 wow fadeInUp" data-wow-delay="600ms" style="background-image: url({{asset('music/img/bg-img/bg-1.jpg')}});">
             <!-- Content -->
             <div class="music-search-content">
                 <h2>Artists</h2>
@@ -573,6 +361,7 @@
     <script src="{{asset('music/js/plugins/plugins.js')}}"></script>
     <!-- Active js -->
     <script src="{{asset('music/js/active.js')}}"></script>
+
 </body>
 
 </html>
