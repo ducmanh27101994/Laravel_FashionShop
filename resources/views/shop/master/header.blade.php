@@ -28,8 +28,8 @@
             <div class="col-lg-3">
                 <div class="header__right">
                     <div class="header__right__auth">
-                        <a href="{{route('login.index')}}">Login</a>
-                        <a href="{{route('register')}}">Register</a>
+                        <a href="{{route('login.index')}}" @if(!empty(\Illuminate\Support\Facades\Session::get('loginAuth'))) hidden @endif >Login</a>
+                        <a href="{{route('register')}}" @if(!empty(\Illuminate\Support\Facades\Session::get('loginAuth'))) hidden @endif >Register</a>
                         <a href="{{route('logOut')}}">Logout</a>
                     </div>
                     <ul class="header__right__widget">
