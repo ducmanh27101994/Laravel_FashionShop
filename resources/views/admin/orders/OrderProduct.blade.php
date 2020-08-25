@@ -60,7 +60,16 @@
                         @endif
                         <td>{{$bill->created_at}}</td>
 
-                        <td>{{$bill->status}}</td>
+                        <td><p class="@if($bill->status == 'Pending')
+                                text-secondary
+                                @elseif($bill->status == 'Success')
+                                text-success
+                                @elseif($bill->status == 'Cancel')
+                                text-danger
+                                @elseif($bill->status == 'Delivering')
+                                text-warning
+                                @endif
+                                ">{{$bill->status}}</p></td>
 
                         <td>$ {{$bill->totalPrice}}</td>
 

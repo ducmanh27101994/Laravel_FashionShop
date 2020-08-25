@@ -32,6 +32,7 @@ class BillController extends Controller
 
     function update(Request $request, $id){
         $this->billServices->update($request,$id);
+
         return redirect()->route('order.index');
 
     }

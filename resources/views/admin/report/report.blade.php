@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
     <a href="{{route('detail.orderYear')}}" class="btn btn-outline-primary">Last Year</a>
-    <a href="{{route('detail.orderMonth')}}" class="btn btn-outline-primary">Last Month</a>
-    <a href="{{route('detail.orderWeek')}}" class="btn btn-outline-primary">Last Week</a>
-    <a href="{{route('detail.orderDay')}}" class="btn btn-outline-primary">Last Day</a>
+    <a href="{{route('detail.orderMonth')}}" class="btn btn-outline-secondary">Last Month</a>
+    <a href="{{route('detail.orderWeek')}}" class="btn btn-outline-success">Last Week</a>
+    <a href="{{route('detail.orderDay')}}" class="btn btn-outline-danger">Last Day</a>
 <br><br><br>
 
 <form method="post" action="{{route('detail.orderSearch')}}">
@@ -28,7 +28,7 @@
     </div>
 </form>
 
-    @yield('report')
+
 </div>
 
 @endsection
