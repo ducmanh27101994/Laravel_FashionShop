@@ -6,6 +6,8 @@ namespace App\Http\Services;
 
 use App\Http\Repositories\BillRepositories;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class BillServices
 {
@@ -29,14 +31,10 @@ class BillServices
         $bill->status = $request->status;
 
         $this->billRepo->save($bill);
+
     }
 
-    function update(Request $request,$id){
-        $bill = $this->billRepo->findById($id);
-        $bill->status = $request->status;
 
-        $this->billRepo->save($bill);
-    }
 
     function showDetailById($id){
         return $this->billRepo->showDetailById($id);

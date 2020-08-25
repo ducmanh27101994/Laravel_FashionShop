@@ -83,7 +83,10 @@
                             <div class="col-lg-12">
                                 <div class="checkout__form__input">
                                     <p>Full Name <span>*</span></p>
-                                    <input name="customer_name" type="text" required>
+                                    <input name="customer_name" type="text" >
+                                    @if($errors->has('customer_name'))
+                                        <p style="color:red">{{$errors->first('customer_name')}}</p>
+                                    @endif
                                 </div>
                             </div>
 
@@ -91,22 +94,36 @@
 
                                 <div class="checkout__form__input">
                                     <p>Address <span>*</span></p>
-                                    <input name="address" type="text" placeholder="Street Address" required>
+                                    <input name="address" type="text" placeholder="Street Address" >
+                                    @if($errors->has('address'))
+                                        <p style="color:red">{{$errors->first('address')}}</p>
+                                    @endif
                                 </div>
 
                             </div>
+
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
                                     <p>Phone <span>*</span></p>
-                                    <input name="phone" type="text" required>
+                                    <input name="phone" type="text" >
+                                    @if($errors->has('phone'))
+                                        <p style="color:red">{{$errors->first('phone')}}</p>
+                                    @endif
                                 </div>
+
                             </div>
+
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
                                     <p>Email <span>*</span></p>
-                                    <input name="email" type="email" required>
+                                    <input name="email" type="email" >
+                                    @if($errors->has('email'))
+                                        <p style="color:red">{{$errors->first('email')}}</p>
+                                    @endif
                                 </div>
+
                             </div>
+
                             <div class="col-lg-12">
                                 <div class="checkout__form__checkbox">
 
@@ -115,8 +132,12 @@
                                 <div class="checkout__form__input">
                                     <p>Oder notes <span>*</span></p>
                                     <input name="note" type="text"
-                                           placeholder="Note about your order, e.g, special noe for delivery" required>
+                                           placeholder="Note about your order, e.g, special noe for delivery" >
+                                    @if($errors->has('note'))
+                                        <p style="color:red">{{$errors->first('note')}}</p>
+                                    @endif
                                 </div>
+
                             </div>
                         </div>
                     </div>

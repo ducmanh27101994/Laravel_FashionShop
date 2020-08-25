@@ -29,7 +29,7 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = $request->password;
-
+        $user->role = 'member';
         $user->save();
 
         toastr()->success('Register Success', 'Thank you!');

@@ -6,6 +6,7 @@ use App\Bill;
 use App\Cart;
 use App\Customer;
 use App\Detail;
+use App\Http\Requests\RequestCheckOut;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -84,7 +85,7 @@ class CartController extends Controller
         return response()->json($data);
     }
 
-    function placeOder(Request $request){
+    function placeOder(RequestCheckOut $request){
         $cart = Session::get('cart');
         $customer = new Customer();
         $customer->customer_name = $request->customer_name;
